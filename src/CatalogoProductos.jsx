@@ -20,6 +20,7 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 
 const CatalogoProductos = ({ products }) => {
+  
   const [searchTerm, setSearchTerm] = React.useState('');
   const [filteredProducts, setFilteredProducts] = React.useState(products);
   const [categoryFilter, setCategoryFilter] = React.useState('Todas');
@@ -46,7 +47,7 @@ const CatalogoProductos = ({ products }) => {
   const handleCardClick = (id) => {
     navigate(`/producto/${id}`);
   };
-
+  
   return (
     <Container maxWidth="md" sx={{ my: 4 }}>
       <Typography variant="h4" gutterBottom align="center" fontWeight="bold" mb={3}>
